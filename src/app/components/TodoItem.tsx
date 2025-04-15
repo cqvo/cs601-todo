@@ -3,7 +3,7 @@
 import React, { useState, useCallback } from 'react';
 import { Checkbox, TextInput, ActionIcon, Group, Paper } from '@mantine/core';
 import { IconTrash, IconEdit, IconCheck, IconX } from '@tabler/icons-react';
-import { Todo } from '../../types/todo';
+import type { Todo } from '@types/todo';
 import { useReducedMotion } from '@mantine/hooks';
 
 interface TodoItemProps {

@@ -4,7 +4,7 @@ import React from 'react';
 import { Stack } from '@mantine/core';
 import { TodoItem } from './TodoItem';
 import { useTodos } from '../context/TodoContext';
-import { Todo } from '../../types/todo';
+import type { Todo } from '@types/todo';
 import { useReducedMotion } from '@mantine/hooks';
 
 export function TodoList() {
