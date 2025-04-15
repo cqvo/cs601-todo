@@ -11,7 +11,7 @@ interface LayoutProps {
 export function Layout({ children }: LayoutProps) {
   return (
     <Container size="sm" py="xl">
-      <Title order={1} align="center" mb="xl">
+      <Title order={1} mb="xl" style={{ textAlign: 'center' }}>
         Todo App
       </Title>
       <Paper shadow="sm" p="md" withBorder>
