@@ -13,8 +13,7 @@ export function TodoProvider({ children }: { children: ReactNode }) {
     const storedTodos = localStorage.getItem('todos');
     if (storedTodos) {
       const parsedTodos = JSON.parse(storedTodos);
-      // Convert string dates back to Date objects
-      const todosWithDates = parsedTodos.map((todo: any) => ({
+      const todosWithDates = (parsedTodos as Todo[]).map((todo) => ({
         ...todo,
         createdAt: new Date(todo.createdAt),
         updatedAt: new Date(todo.updatedAt)
