@@ -1,7 +1,7 @@
 'use client';
 
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
-import type { Todo, TodoContextType } from '@types/todo';
+import type { Todo, TodoContextType } from '../../../types/todo';
 
 const TodoContext = createContext<TodoContextType | undefined>(undefined);
 
